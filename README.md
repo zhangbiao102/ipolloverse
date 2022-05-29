@@ -43,4 +43,4 @@ Bin/
 
 ###卸载脚本
 
-LC_ALL=en_US.UTF-8 bash <(curl -s http://192.168.1.104/install_setup.sh)
+`LC_ALL=en_US.UTF-8 bash <(curl -s http://192.168.1.102/uninstall_ipolloverse.sh)`
