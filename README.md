@@ -38,8 +38,9 @@ Bin/
 - printf
 - egrep
 - expr
-测试通过的平台有ubuntu18.04.6 和 centos
+测试通过的平台有ubuntu18.04.6 和 centos7.9
 
 
 ###卸载脚本
 
+LC_ALL=en_US.UTF-8 bash <(curl -s http://192.168.1.104/install_setup.sh)
