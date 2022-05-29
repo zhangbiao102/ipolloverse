@@ -19,7 +19,7 @@ LC_ALL=en_US.UTF-8 bash <(curl -s http://192.168.1.102/install_ipolloverse.sh) \
 --storage：承诺的磁盘大小，在home路径下，单位GB
 --measureAddr: 测量节点ID可选参数
 
-http://192.168.1.104 是脚本存放位置
+http://192.168.1.104 是脚本存放的服务器地址
 ```
 
 Bin 文件说明
