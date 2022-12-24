@@ -13,9 +13,6 @@ import wmi
 cpuinfo = wmi.WMI()
 CPU = cpuinfo.Win32_Processor()[0].Name
 
-port1=777
-port2=11111
-
 configUrl='https://ecotoolstest.ipolloverse.com/ipvConfig/ipvConfig?nodeAddr='
 softUrl='https://ecotools.ipolloverse.com'
 #softUrl='https://ecotoolstest.ipolloverse.com'
