@@ -1,0 +1,19 @@
+#FROM python:3.5
+
+FROM python:3-alpine
+
+RUN python -m pip install --upgrade pip
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo "Asia/Shanghai" > /etc/timezone 
+RUN pip3 install dnslib  dnspython
+RUN pip3  install PyYAML
+
+
+WORKDIR /home
+
+COPY ./dns_config.yaml /home/dns_config.yaml
+COPY ./logging_config.yaml /home/logging_config.yaml
+COPY ./named.py /home/named.py
+
+EXPOSE 53/udp
+
+CMD ["python3","/home/named.py"]

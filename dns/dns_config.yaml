@@ -1,0 +1,9 @@
+version: 1
+server:
+  listenIP: '0.0.0.0'
+  listenPort: 53 #UDP
+  logConfig: 'logging_config.yaml'
+
+dns_config:
+  resolver: ["8.8.8.8", "8.8.4.4"]
+  domains: ['*.ipolloverse.com','*.baidu.com']
